@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/login_bg.jpg) no-repeat center;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+html .layui-container,
+body .layui-container {
+  position: relative;
+}
+html .layui-container .layui-row,
+body .layui-container .layui-row {
+  margin-top: 25px;
+}
+html .layui-container .layui-col-md3 span,
+body .layui-container .layui-col-md3 span {
+  font-size: 12px;
+  color: #fff;
+}
+html .login,
+body .login {
+  position: absolute;
+  left: 30%;
+  margin-top: 155px;
+  text-align: center;
+  background-color: #edeff0;
+  width: 400px;
+  height: 330px;
+}
+html .login .login-img,
+body .login .login-img {
+  width: 400px;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+}
+html .login .login-block,
+body .login .login-block {
+  margin: 20px auto 0;
+  margin-left: 35px;
+}
+html .login .login-block .login-input,
+body .login .login-block .login-input {
+  width: 334px !important;
+  height: 37px !important;
+  font-size: 15px;
+  padding-left: 40px;
+}
+html .login .login-block .layui-input-block,
+body .login .login-block .layui-input-block {
+  position: relative!important;
+}
+html .login .login-block .layui-icon,
+body .login .login-block .layui-icon {
+  position: absolute!important;
+  left: 10px!important;
+  top: 10px!important;
+}
+html .login .layui-btn-normal,
+body .login .layui-btn-normal {
+  width: 335px!important;
+  background-color: #1E9FFF;
+  margin-top: 20px;
+  font-size: 18px;
+  overflow: hidden;
+}
+html .login .login-box,
+body .login .login-box {
+  background-color: #edeff0;
+  color: #000;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  font-size: 12px;
+}
+html .login .login-age,
+body .login .login-age {
+  background-color: #edeff0;
+  color: #000;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  font-size: 12px;
+}
