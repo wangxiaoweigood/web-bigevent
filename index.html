@@ -17,11 +17,11 @@
         <div class="layui-header">
             <div class="layui-logo"><img src="./assets/images/logo.png" alt=""></div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
-
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
                     <a href="javascript:;">
-                        <img src="./assets/images/ca69d2857f2d83d566451e76c6dbcc91_1.jpg" class="layui-nav-img">
+                        <img id="userinfo-img-gr" src="./assets/images/ca69d2857f2d83d566451e76c6dbcc91_1.jpg"
+                            class="layui-nav-img">
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
@@ -30,20 +30,23 @@
                         <dd><a href="">重置密码</a></dd>
                     </dl>
                 </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;" id="tuichu">
+                        <i class="layui-icon layui-icon-home">
 
-
-                <li class="layui-nav-item"><a href=""> <i class="layui-icon layui-icon-home"></i>退出</a></li>
+                        </i>
+                        退出
+                    </a>
+                </li>
             </ul>
         </div>
-
         <div class="layui-side layui-bg-black">
             <!-- 用户信息 -->
             <div class="userinfo">
                 <div>
-                    <img src="./assets/images/ca69d2857f2d83d566451e76c6dbcc91_1.jpg" alt="">
+                    <img id="userinfo-img" src="./assets/images/ca69d2857f2d83d566451e76c6dbcc91_1.jpg" alt="">
                 </div>
-
-                <span>欢迎某某某</span>
+                <span id="userinfo-name">欢迎某某某</span>
             </div>
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
@@ -68,17 +71,13 @@
                         </dl>
                     </li>
 
-                    <!-- <li class="layui-nav-item"><a href="">发布商品</a></li> -->
                 </ul>
             </div>
         </div>
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <!-- <div style="padding: 15px;"> -->
-            <!-- <img src="./assets/images/ca69d2857f2d83d566451e76c6dbcc91_1.jpg" alt=""> -->
             <iframe class="iframe" name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
-            <!-- </div> -->
         </div>
 
         <div class="layui-footer">
@@ -90,6 +89,7 @@
 
 <body>
     <script src="./assets/lib/jquery.js"></script>
+    <!-- <script src="./assets/lib/layui/layui.all.js"></script> -->
     <script src="./assets/lib/layui/layui.all.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
