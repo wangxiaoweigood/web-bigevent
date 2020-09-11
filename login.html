@@ -31,14 +31,14 @@
                 <img src="./assets/images/login_title.png" alt="">
             </div>
             <!-- 表单 -->
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_login">
                 <div>
                     <!-- 手机号注册/登录模块-->
                     <div class="layui-form-item">
                         <!-- 手机号登录 -->
                         <div class="layui-input-block login-block">
                             <i class="layui-icon layui-icon-user"></i>
-                            <input type="text" name="identity" lay-verify="required|phone|" placeholder="邮箱/手机号码"
+                            <input type="text" name="identity" lay-verify="required" placeholder="邮箱/手机号码"
                                 autocomplete="off" class="layui-input login-input">
                         </div>
                     </div>
@@ -69,15 +69,15 @@
             <img src="./assets/images/login_title.png" alt="">
         </div>
         <!-- 表单 -->
-        <form class="layui-form" action="">
+        <form class="layui-form" id="form_bd" action="">
             <div>
                 <!-- 手机号注册/登录模块-->
                 <div class="layui-form-item">
                     <!-- 请输入用户名 -->
                     <div class="layui-input-block login-block">
                         <i class="layui-icon layui-icon-user"></i>
-                        <input type="text" name="identity" lay-verify="required|phone|" placeholder="请输入用户名"
-                            autocomplete="off" class="layui-input login-input">
+                        <input type="text" name="identity" lay-verify="required" placeholder="请输入用户名" autocomplete="off"
+                            class="layui-input login-input">
                     </div>
                 </div>
                 <!-- 密码登录 -->
@@ -90,8 +90,8 @@
                 <!-- 再次输入密码登录 -->
                 <div class="layui-input-block login-block " id="btn-mm">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="password" lay-verify="required|pass|rewper" placeholder="请再次输入密码"
-                        autocomplete="off" class="layui-input login-input">
+                    <input type="password" name="password" id="zcmm" lay-verify="required|pass|rewper"
+                        placeholder="请再次输入密码" autocomplete="off" class="layui-input login-input">
                 </div>
                 <button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">登录</button>
                 <!-- 去注册按钮 -->
