@@ -85,3 +85,7 @@ body .login .login-age {
   bottom: 20px;
   font-size: 12px;
 }
+html .login #zc-box,
+body .login #zc-box {
+  background-color: red;
+}
