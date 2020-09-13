@@ -16,6 +16,7 @@ $(function () {
         });
     })
 })
+
 function getUser() {
     $.ajax({
         url: 'http://ajax.frontend.itheima.net/my/userinfo',
@@ -50,7 +51,7 @@ function getUser() {
 }
 //渲染头像函数
 function renderAvatar(user) {
-    //获取用户得名称
+    //获取用户得名称user.username
     // console.log(('#userinfo-img').src());
     var name = user.nickname || user.username;
     // console.log(name);

@@ -19,31 +19,31 @@
         <div class="box-1">
             修改用户信息
         </div>
-        <!-- 登录名称 -->
+        <!-- 旧密码 -->
         <form class="layui-form" action="">
             <div class="layui-form-item">
-                <label class="layui-form-label">原密码</label>
+                <label class="layui-form-label">旧密码</label>
                 <div class="layui-input-inline">
-                    <input type="password" name="password" required lay-verify="required" placeholder="原密码"
-                        autocomplete="off" class="layui-input">
+                    <input type="password" id="layui-input" name="password" required lay-verify="required|pwd|samePwd"
+                        placeholder="原密码" autocomplete="off" class="layui-input">
                 </div>
 
             </div>
-            <!-- 用户表单 -->
+            <!-- 新密码 -->
             <div class="layui-form-item">
-                <label class="layui-form-label">原密码</label>
+                <label class="layui-form-label">新密码</label>
                 <div class="layui-input-inline">
-                    <input type="password" name="password" required lay-verify="required" placeholder="原密码"
-                        autocomplete="off" class="layui-input">
+                    <input type="password" id="layui-xmm" name="password" required lay-verify="required|pwd|samePmm"
+                        placeholder="原密码" autocomplete="off" class="layui-input">
                 </div>
 
             </div>
-            <!-- 邮箱区域 -->
+            <!-- 确认新密码 -->
             <div class="layui-form-item">
                 <label class="layui-form-label">确认新密码</label>
                 <div class="layui-input-inline">
-                    <input type="password" name="password" required lay-verify="required" placeholder="确认新密码"
-                        autocomplete="off" class="layui-input">
+                    <input type="password" id="ipt-mm" name="password" required lay-verify="required"
+                        placeholder="确认新密码" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <!-- 按钮区域 -->
@@ -57,7 +57,7 @@
     </div>
     <script src="../assets/lib/layui/layui.all.js"></script>
     <script src="../assets/lib/jquery.js"></script>
-    <script src="../assets/js/user_info.js"></script>
+    <script src="../assets/js/ueer_mima.js"></script>
 
 </body>
 
