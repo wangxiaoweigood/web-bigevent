@@ -15,7 +15,7 @@
     <div class="layui-card">
         <div class="layui-card-header">
             <span>文章类别管理</span>
-            <button type="button" class="layui-btn layui-btn-normal layui-btn-sm">添加类别</button>
+            <button type="button" id="add" class="layui-btn layui-btn-normal layui-btn-sm">添加类别</button>
         </div>
         <div class="layui-card-body">
             <table class="layui-table">
@@ -32,13 +32,62 @@
                     </tr>
                 </thead>
                 <tbody>
-                  
+
                 </tbody>
             </table>
         </div>
 
-        
+
     </div>
+    <!-- 弹出层模块 -->
+    <script type="html" id="pop-up">
+        <form class="layui-form" id="form-add">
+            <div class="layui-form-item">
+              <label class="layui-form-label">分类名称</label>
+              <div class="layui-input-block">
+                <input type="text" name="name" required  lay-verify="required" placeholder="请输入分类名称" autocomplete="off" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">分类别名</label>
+              <div class="layui-input-block">
+                <input type="text" name="alias" required  lay-verify="required" placeholder="请输入分类别名" autocomplete="off" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">确认添加</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </form>
+    </script>
+
+    <!-- 编辑文章弹出层 -->
+
+    <script type="html" id="editorAdd">
+        <form class="layui-form" id="form-add" lay-filter='form-edit'>
+            <input type="hidden" name="Id">
+            <div class="layui-form-item">
+              <label class="layui-form-label" >文章分类</label>
+              <div class="layui-input-block">
+                <input type="text" id="iptfl" name="name" required  lay-verify="required" placeholder="分类名称" autocomplete="off" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label">分类别名</label>
+              <div class="layui-input-block">
+                <input type="text" id="iptbm"  name="alias" required  lay-verify="required" placeholder="分类别名" autocomplete="off" class="layui-input">
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <div class="layui-input-block">
+                <button id="btnXg" class="layui-btn" lay-submit lay-filter="formDemo">确认修改</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+              </div>
+            </div>
+          </form>
+    </script>
     <script src="../assets/lib/layui/layui.all.js"></script>
     <!-- <script src="../assets/js/"></script> -->
     <script src="../assets/lib/jquery.js"></script>

@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.layui-card {
-  /* background-color: red!important;s */
+.layui-form-item {
+  /* background-color: ; */
+  margin-top: 25px;
 }
