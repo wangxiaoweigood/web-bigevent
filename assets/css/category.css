@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 15px;
+  background-color: #f2f3f5;
+  /* background-color: red; */
+}
+.layui-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layui-card {
+  /* background-color: red!important;s */
+}
