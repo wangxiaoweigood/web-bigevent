@@ -160,7 +160,7 @@ $(function () {
         })
         $('body').on('submit', '#form-add', function (e) {
             e.preventDefault()
-            // console.log(1);
+            console.log(1);
             $.ajax({
                 url: 'http://ajax.frontend.itheima.net/my/article/addcates',
                 method: 'POST',
@@ -169,12 +169,13 @@ $(function () {
                     Authorization: localStorage.getItem('token' || '')
                 },
                 success: function (res) {
+                    console.log(res.message);
                     if (res.status !== 0) {
                         return layer.msg(res.message)
                     }
                     // layer.mag(res.message)
-                    // layer.msg(res.message)
-                    layer.close(indexAdd)
+                    layer.msg(res.message)
+                    layer.close(indexEdit)
                 }
             })
             loadListData()
