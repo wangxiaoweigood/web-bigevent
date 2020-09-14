@@ -1,0 +1,15 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 15px;
+  background-color: #f2f3f5;
+}
+.layui-form-select .layui-input {
+    padding-right: 30px;
+    cursor: pointer;
+    margin-left: 15px;
+}

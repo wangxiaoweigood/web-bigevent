@@ -175,7 +175,7 @@ $(function () {
                     }
                     // layer.mag(res.message)
                     layer.msg(res.message)
-                    layer.close(indexEdit)
+                    layer.close(indexAdd)
                 }
             })
             loadListData()
